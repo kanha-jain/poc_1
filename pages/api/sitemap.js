@@ -36,7 +36,7 @@ export default async (req, res) => {
       // Build url portion of sitemap.xml
       const server =
         process.env.NODE_ENV === "production"
-          ? "https://charzer.com"
+          ? "https://poc-sage.vercel.app"
           : "htttp:localhost:3000";
       return `<url><loc>http://${server}${route}</loc></url>`;
     })
