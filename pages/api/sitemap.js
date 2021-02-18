@@ -37,8 +37,8 @@ export default async (req, res) => {
       const server =
         process.env.NODE_ENV === "production"
           ? "https://poc-sage.vercel.app"
-          : "htttp:localhost:3000";
-      return `<url><loc>http://${server}${route}</loc></url>`;
+          : "http://localhost:3000";
+      return `<url><loc>${server}${route}</loc></url>`;
     })
     .join("");
 
